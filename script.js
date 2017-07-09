@@ -10,7 +10,7 @@ The `test.js` file contains tests for all of the functions
 in this project. Do not change any code in `test.js`.
 To see the output from `test.js` and to evaluate your work,
 open `index.html` in Chrome and view the console in the
-Developer Tools. You'll know that you are finding success 
+Developer Tools. You'll know that you are finding success
 when all of the `console.log` statements print 'true'.
 */
 
@@ -18,22 +18,32 @@ when all of the `console.log` statements print 'true'.
 /********************
 Use the following array to complete tasks 1-3
 *********************/
+
 let numbers = [ 1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6 ];
 
 
 /*
 1. Return the 4th element in the "numbers" array
 */
-function getFourthNum(){
-    // Your answer here:
+
+function getFourthNum() {
+  return numbers[3];
+
 }
 
 /*
-2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
+2. Iterate over the "numbers" array. Push any numbers
+less than 10 onto "smallNums". Return "smallNums".
 */
-function smallNums(){
+
+function smallNums() {
     let smallNums = [];
-    // Your answer here:
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] < 10) {
+        smallNums.push( numbers[i] );
+      }
+    }
+    return smallNums;
 }
 
 /*
