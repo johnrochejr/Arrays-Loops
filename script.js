@@ -141,7 +141,7 @@ function union() {
   let same = [];
   for (let i = 0; i < first.length; i++) {
     if (first[i] === second[i]) {
-     same.push(first[i] === second[i]);
+     same.push(first[i]);
     }
   }
   return same;
